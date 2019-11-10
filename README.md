@@ -33,7 +33,7 @@ GET {
 $ choco install python, pip, npm
 ```  
 
-任意のディレクトリで行ってください.  
+任意のディレクトリで行うこと.  
 ```shell
 $ git clone https://github.com/Daichi-1637/Pattern-mining
 ```  
