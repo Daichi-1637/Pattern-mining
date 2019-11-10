@@ -22,7 +22,7 @@ GET {
 ```
 
 また, データの指定は以下の様に指定する.  
-`http://localhost:8000/{data0}/{data1}/` (data0, data1: a, i, u, e, o)
+`http://localhost:8000/{voice0}/{voice1}/` (voice0, voice1: A, I, U, E, O)
 
 ## How to use ? (You can do it, if you follow below steps ! Maybe...)
 ### setup  
