@@ -26,35 +26,40 @@ GET {
 
 ## How to use ? (You can do it, if you follow below steps ! Maybe...)
 ### setup  
-ローカル環境で行うことを想定している.  
+ローカル環境で行うことを想定.  
 ( chocolateryは自分で頑張って入れてください. )
 
-`$ choco install python, pip, npm`
- 
- Pattern-mining/src/speech-analysis  
-`$ pip install matplot`  
-`$ pip install scipy`  
-`$ pip install pandas`  
-`$ pip install falcon`  
-`$ pip install json`  
+```$ choco install python, pip, npm```  
 
- Pattern-mining/src/web-app  
-`npm install --save react react-dom`  
-`npm install --save-dev @types/react @types/react-dom`  
-`npm install --save @amcharts/amcharts4`   
+任意のディレクトリで行ってください.  
+```git clone https://github.com/Daichi-1637/Pattern-mining```  
+```cd Pattern-mining```  
+ 
+```cd src/speech-analysis```  
+```$ pip install matplot```  
+```$ pip install scipy```  
+```$ pip install pandas```  
+```$ pip install falcon```  
+```$ pip install json```  
+
+```cd src/web-app```  
+```npm install --save react react-dom```  
+```npm install --save-dev @types/react @types/react-dom```  
+```npm install --save @amcharts/amcharts4```   
 
 ### 音声データの置き場所  
 以下のコマンドを打ち, 作成されたディレクトリvoicesに音声データを置くこと.  
-`cd ../Pattern-mining`  
-`mkdir voices`  
+```cd ../..```
+```mkdir voices```
+```cd voices```
 
 なお, 現段階では音声データは  
 `20191016-@-retake.wav` (@: a, i, u, e, o)  
 というファイル名としなければ処理できない.  
 
 ### 相関係数計算サーバの立ち上げ
-Pattern-mining/src/speech-analysis  
-`python SpeechAnalysis.py`
+```cd ../src/speech-analysis```  
+```python SpeechAnalysis.py```
 ### ブラウザ表示サーバの立ち上げ  
-Pattern-mining/src/web-app  
-`npm start`  
+```cd ../../src/web-app```  
+```npm start```  
