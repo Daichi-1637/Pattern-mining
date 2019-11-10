@@ -1,6 +1,7 @@
 # Pattern-mining
 ## できること
-2つの音声データから相関係数を算出し, 相関係数値と算出に使用したデータの波形をブラウザで表示する.  
+2つの音声データから相関係数を算出し, 相関係数値と算出に使用したデータの波形をブラウザで表示する.   
+( なお, 「あ」から「お」までの音声データしか計測できない. )  
 ## 実験環境
 - winodws 10
 - chocoratery
@@ -39,11 +40,14 @@ GET {
 `npm install --save @amcharts/amcharts4`   
 
 ### 音声データの置き場所  
-以下のコマンドを打ち, 作成されたディレクトリvoicesに音声データを置く.
-
-なお, 現段階では音声データは
+以下のコマンドを打ち, 作成されたディレクトリvoicesに音声データを置くこと.  
 `cd ../Pattern-mining`  
 `mkdir voices`  
+
+なお, 現段階では音声データは  
+`20191016-@-retake.wav` (@: a, i, u, e, o)  
+というファイル名としなければ処理できない.  
+
 ### 相関係数計算サーバの立ち上げ
 Pattern-mining/src/speech-analysis  
 `python SpeechAnalysis.py`
