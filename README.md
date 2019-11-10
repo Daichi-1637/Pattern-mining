@@ -15,11 +15,15 @@ httpサーバの仕様について, 今回はgetメソッドしか用いてい�
 以下にgetメソッドの仕様を書く.  
 ```javascript
 GET {
- data0: (int)[],    // 相関係数を求める１つ目の音声データ(整数値の配列)  
- data1: (int)[],    // 相関係数を求める２つ目の音声データ(整数値の配列)  
+ data0: (int)[],    // 相関係数を求める１つ目の音声データ  
+ data1: (int)[],    // 相関係数を求める２つ目の音声データ
  corr: (float)      // 相関係数
 }
 ```
+
+また, データの指定は以下の様に指定する.  
+`http://localhost:8000/{data0}/{data1}/` (data0, data1: a, i, u, e, o)
+
 ## How to use ? (You can do it, if you follow below steps ! Maybe...)
 ### setup  
 ローカル環境で行うことを想定している.  
