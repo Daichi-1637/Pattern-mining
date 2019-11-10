@@ -63,7 +63,7 @@ $ pip install json
 
 ###  ブラウザ表示サーバのセッティング
 ```shell
-$ cd src/web-app
+$ cd /web-app
 ```  
 ```shell
 $ npm install --save react react-dom
