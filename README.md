@@ -29,37 +29,79 @@ GET {
 ローカル環境で行うことを想定.  
 ( chocolateryは自分で頑張って入れてください. )
 
-```$ choco install python, pip, npm```  
+```shell
+$ choco install python, pip, npm
+```  
 
 任意のディレクトリで行ってください.  
-```git clone https://github.com/Daichi-1637/Pattern-mining```  
-```cd Pattern-mining```  
- 
-```cd src/speech-analysis```  
-```$ pip install matplot```  
-```$ pip install scipy```  
-```$ pip install pandas```  
-```$ pip install falcon```  
-```$ pip install json```  
+```shell
+$ git clone https://github.com/Daichi-1637/Pattern-mining
+```  
+```shell
+$ cd Pattern-mining
+```  
 
-```cd src/web-app```  
-```npm install --save react react-dom```  
-```npm install --save-dev @types/react @types/react-dom```  
-```npm install --save @amcharts/amcharts4```   
+### 相関係数計算サーバのセッティング
+```shell
+$ cd src/speech-analysis
+```  
+```shell
+$ pip install matplot
+```  
+```shell
+$ pip install scipy
+```  
+```shell
+$ pip install pandas
+```  
+```shell
+$ pip install falcon
+```  
+```shell
+$ pip install json
+```  
+
+###  ブラウザ表示サーバのセッティング
+```shell
+$ cd src/web-app
+```  
+```shell
+$ npm install --save react react-dom
+```  
+```shell
+$ npm install --save-dev @types/react @types/react-dom
+```  
+```shell
+$ npm install --save @amcharts/amcharts4
+```   
 
 ### 音声データの置き場所  
 以下のコマンドを打ち, 作成されたディレクトリvoicesに音声データを置くこと.  
-```cd ../..```
-```mkdir voices```
-```cd voices```
+```shell
+$ cd ../..
+```  
+```shell
+$ mkdir voices
+```  
+```shell
+$ cd voices
+```  
 
 なお, 現段階では音声データは  
 `20191016-@-retake.wav` (@: a, i, u, e, o)  
 というファイル名としなければ処理できない.  
 
 ### 相関係数計算サーバの立ち上げ
-```cd ../src/speech-analysis```  
-```python SpeechAnalysis.py```
+```shell
+$ cd ../src/speech-analysis
+```  
+```shell
+$ python SpeechAnalysis.py
+```
 ### ブラウザ表示サーバの立ち上げ  
-```cd ../../src/web-app```  
-```npm start```  
+```shell
+$ cd ../../src/web-app
+```  
+```shell
+$ npm start
+```  
